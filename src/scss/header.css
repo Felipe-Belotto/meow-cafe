@@ -1,0 +1,92 @@
+header {
+  width: 1188px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+header nav .container .logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+header nav .container ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+header nav .container ul li {
+  font-size: 20px;
+  font-weight: 500;
+}
+header nav .container ul li a {
+  color: #3C0E0E;
+  text-decoration: none;
+}
+header nav .button-container {
+  display: flex;
+  gap: 10px;
+}
+header nav .button-container .button-login {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+header nav .button-container .button-delivery {
+  width: 152px;
+  height: 48px;
+  flex-shrink: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 39px;
+  background: #431B1B;
+  border: none;
+  cursor: pointer;
+}
+header .banner {
+  display: flex;
+  justify-content: space-between;
+}
+header .banner .banner-text {
+  padding: 0 0 0 42px;
+}
+header .banner .banner-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+header .banner .banner-text h2 strong {
+  font-size: 80px;
+}
+header .banner .banner-text p {
+  max-width: 350px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 157%; /* 25.12px */
+}
+header .banner .banner-img img {
+  width: 614px;
+  height: 530px;
+  position: relative;
+  top: -170px;
+  z-index: -1;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+}/*# sourceMappingURL=header.css.map */
