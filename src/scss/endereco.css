@@ -113,4 +113,55 @@
 .endereco aside .local p {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .endereco {
+    width: 90%;
+    height: auto;
+    padding: 120px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .endereco .container {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 84px);
+    min-height: 300px;
+    padding: 0;
+    border-radius: 48px 48px 0 0;
+    padding: 42px;
+  }
+  .endereco .container .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .endereco .container .titulo h2 {
+    text-align: center;
+    font-size: 64px;
+  }
+  .endereco .cafe-endereco {
+    display: none;
+  }
+  .endereco aside {
+    width: calc(100% - 84px);
+    min-height: 300px;
+    border-radius: 0 0 48px 48px;
+    padding: 42px;
+  }
+  .endereco aside .titulo h2 {
+    font-size: 32px;
+  }
+  .endereco aside p {
+    width: 100%;
+    height: auto;
+  }
+  .endereco aside .local {
+    height: 32px;
+    gap: 8px;
+  }
+  .endereco aside .local img {
+    height: 24px;
+  }
 }/*# sourceMappingURL=endereco.css.map */

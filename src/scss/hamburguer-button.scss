@@ -1,0 +1,153 @@
+
+.menu-hamburger{
+  width: 100%;
+  display: none;
+  justify-content: center;
+}
+
+.menu-hamburguer-elements{
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-hamburguer-elements li{
+  list-style: none;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.menu-hamburguer-elements a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu-hamburguer-elements a:hover{
+  color: rgba(20,20,20,.8)
+}
+
+
+/* BOTÃO MENU HAMBURGUER */
+.menu {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #593534;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #593534;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input {
+  display: none;
+}
+
+/* rotação dos elementos do span */
+input:checked ~ label .hamburguer {
+  background: #ff0800;
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  background: #ff0800;
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  background: #ff0800;
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+input:checked ~ .menu-hamburguer-elements{
+  left: 0;
+}
+
+// quando o input estiver checked quero que bloqueie o scroll para nao mover a pagina
+input:checked ~ body{
+  display: none;
+}
+
+
+/* ATIVANDO O BOTÃO HAMBURGUER QUANDO O TAMANHO DA TELA ATINGIR 600PX */
+@media (max-width: 600px){
+
+  .menu-hamburguer-elements a:hover{
+      width: 150px;
+      background-color: rgba(60, 60, 60, 0.289);
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+  }
+  
+  .menu-hamburger{
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      align-self: flex-start;
+      overflow: auto;
+      z-index: 1;
+      color: white
+  }
+
+  .menu-hamburguer-elements{
+      width: 100%;
+      height: 100%;
+      background-color: #a4a096ce;
+      position: fixed;
+      left: -100%;
+      top: 0;
+  
+      transition: left cubic-bezier(1,0,0,1) .8s;
+      
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  
+  
+      z-index: -1;
+  }
+
+  .menu{
+      display: flex;
+      height: 60px;
+      width: 60px;
+  }
+
+}

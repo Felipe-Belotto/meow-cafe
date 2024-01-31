@@ -6,8 +6,9 @@
   <title>Meow Café</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  
+
+<body id="root">
+
   <header>
     <nav>
       <div class="container">
@@ -17,7 +18,7 @@
         </div>
   
         <ul>
-          <li class="active"><a href="#" >Início</a></li>
+          <li><a href="#" >Início</a></li>
           <li><a href="#">Produtos</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
@@ -26,7 +27,30 @@
       <div class="button-container">
         <button class="button-login">Login</button>
         <button class="button-delivery">Delivery</button>
-      </div>
+
+        <nav class="menu-hamburger">
+
+          <input id="menu-hamburguer" type="checkbox" />
+          <label for="menu-hamburguer">
+              <div class="menu">
+                  <span class="hamburguer"></span>
+              </div>
+          </label>
+
+          <ul class="menu-hamburguer-elements show">
+              <li>
+                  <a href="#">Inicio</a>
+              </li>
+
+              <li>
+                  <a href="#">Produtos</a>
+              </li>
+
+              <li>
+                  <a href="#">Sobre nós</a>
+              </li>
+          </ul>
+      </nav>
    
     </nav>
 
@@ -50,7 +74,7 @@
   </header>
 
   <section class="cafes">
-    <img src="src/img/fundoCafe.png" alt="fundo cafe">
+    <img class="fundo-cafe" src="src/img/fundoCafe.png" alt="fundo cafe">
 
     <div class="titulo">
       <h2>Cafés</h2>
@@ -212,7 +236,10 @@
 
     </section>
   
+    <span>Versão feita por <a href="https://www.linkedin.com/in/felipe-belotto-a34738185/" target="_blank">Felipe Belotto</a></span>
   </footer>
+
+  <script src="main.js"></script>
 
 </body>
 </html>

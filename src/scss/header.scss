@@ -3,6 +3,7 @@ header{
   height: 530px;
   display:flex;
   flex-direction: column;
+  z-index: 100;
 
   nav{
     display: flex;
@@ -34,6 +35,12 @@ header{
             color: #3C0E0E;
             text-decoration: none;
           }
+
+          a:hover {
+            text-decoration:  underline;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 8px;
+          }
          }
        }
     }
@@ -50,6 +57,12 @@ header{
         cursor: pointer;
       }
 
+      .button-login:hover{
+        background-color: rgba(255, 255, 255, 0.217) ;
+        border-radius: 48px;
+      }
+
+
       .button-delivery{
         width: 152px;
         height: 48px;
@@ -61,6 +74,10 @@ header{
         background: #431B1B;
         border: none;
         cursor: pointer;
+      }
+
+      .button-delivery:hover{
+        background: #431b1be0;
       }
     }
   }
@@ -102,9 +119,125 @@ header{
   }
  
 }
+.button-menuHamburguer{
+  display: none;
+  user-select: none;
+ }
 
-.active{
-  text-decoration:  underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 8px;
+ @media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+    height: auto;
+
+
+    nav{
+      .container{
+        gap: 0px;
+
+        .logo{
+          width: auto;
+          font-size: 24px;
+          
+          img{
+            width: 40%;
+          }
+        }
+
+        ul{
+          gap: 24px;
+
+          li{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .button-container{
+      gap: 16px;
+      padding: 0 16px;
+    }
   }
+  
+ }
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+
+    nav{
+      justify-content: start;
+      align-items: center;
+      gap: 8px;
+
+      .container{
+        gap: 0;
+        
+      .logo{
+        font-size: 16px;
+
+        img{
+          width: 90px;
+          height: calc(90px - 13px);
+        }
+      }
+
+        ul{
+          display: none;
+        }
+      }
+
+      
+    .button-container {
+      align-items: center;
+
+      .button-login{
+        display: none;
+      }
+    }
+
+    .button-delivery{
+      width: 109px;
+      height: 43px;
+      border-radius: 38px;
+      flex-shrink: 0;
+    }
+  }
+
+  .banner{
+    padding: 50px 0 0 0;
+    .banner-text{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding:  0 0 0 16px;
+
+      h2{
+        font-size: 14px;
+
+        strong{
+          font-size: 48px;  
+        }
+      }
+
+      p {
+        width: 230px;
+        font-size: 14px;
+      }
+    }
+
+    .banner-img{
+      
+      img{
+        top: -30px;
+        left: 20px;
+        width: 400px;
+        height: 350px;
+      }
+     }
+    
+   }
+  }
+}
+

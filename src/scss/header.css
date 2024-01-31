@@ -3,6 +3,7 @@ header {
   height: 530px;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 header nav {
   display: flex;
@@ -33,6 +34,11 @@ header nav .container ul li a {
   color: #3C0E0E;
   text-decoration: none;
 }
+header nav .container ul li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+}
 header nav .button-container {
   display: flex;
   gap: 10px;
@@ -43,6 +49,10 @@ header nav .button-container .button-login {
   font-weight: 500;
   border: none;
   cursor: pointer;
+}
+header nav .button-container .button-login:hover {
+  background-color: rgba(255, 255, 255, 0.217);
+  border-radius: 48px;
 }
 header nav .button-container .button-delivery {
   width: 152px;
@@ -55,6 +65,9 @@ header nav .button-container .button-delivery {
   background: #431B1B;
   border: none;
   cursor: pointer;
+}
+header nav .button-container .button-delivery:hover {
+  background: rgba(67, 27, 27, 0.8784313725);
 }
 header .banner {
   display: flex;
@@ -85,8 +98,97 @@ header .banner .banner-img img {
   z-index: -1;
 }
 
-.active {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 8px;
+.button-menuHamburguer {
+  display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header nav .container {
+    gap: 0px;
+  }
+  header nav .container .logo {
+    width: auto;
+    font-size: 24px;
+  }
+  header nav .container .logo img {
+    width: 40%;
+  }
+  header nav .container ul {
+    gap: 24px;
+  }
+  header nav .container ul li {
+    font-size: 20px;
+  }
+  header .button-container {
+    gap: 16px;
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header nav {
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+  }
+  header nav .container {
+    gap: 0;
+  }
+  header nav .container .logo {
+    font-size: 16px;
+  }
+  header nav .container .logo img {
+    width: 90px;
+    height: 77px;
+  }
+  header nav .container ul {
+    display: none;
+  }
+  header nav .button-container {
+    align-items: center;
+  }
+  header nav .button-container .button-login {
+    display: none;
+  }
+  header nav .button-delivery {
+    width: 109px;
+    height: 43px;
+    border-radius: 38px;
+    flex-shrink: 0;
+  }
+  header .banner {
+    padding: 50px 0 0 0;
+  }
+  header .banner .banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 0 0 16px;
+  }
+  header .banner .banner-text h2 {
+    font-size: 14px;
+  }
+  header .banner .banner-text h2 strong {
+    font-size: 48px;
+  }
+  header .banner .banner-text p {
+    width: 230px;
+    font-size: 14px;
+  }
+  header .banner .banner-img img {
+    top: -30px;
+    left: 20px;
+    width: 400px;
+    height: 350px;
+  }
 }/*# sourceMappingURL=header.css.map */

@@ -3,6 +3,7 @@
 
 @import url(/reset.css);
 @import url(src/scss/header.css);
+@import url(src/scss/hamburguer-button.css);
 @import url(src/scss/cafes.css);
 @import url(src/scss/croissants.css);
 @import url(src/scss/delivery.css);
@@ -21,6 +22,14 @@ body{
   align-items: center;
 }
 
+.active{
+  overflow: hidden;
+}
+
 img{
   user-select: none;
+}
+
+hr{
+  border: none;
 }

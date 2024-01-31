@@ -67,4 +67,55 @@
   line-height: 157%; /* 25.12px */
   border: none;
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .croissants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 120px 0 0 0;
+  }
+  .croissants div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .croissants div span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109.556px;
+    height: 39.512px;
+    flex-shrink: 0;
+    border-radius: 47px;
+    background: #FFF;
+    color: #F9C4C4;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 157%; /* 31.4px */
+  }
+  .croissants div .titulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .croissants div .titulo h2 {
+    font-size: 48px;
+  }
+  .croissants div h3 {
+    font-size: 28px;
+  }
+  .croissants div p {
+    width: 90%;
+    text-align: center;
+  }
+  .croissants div button {
+    text-align: center;
+  }
+  .croissants img {
+    width: 90%;
+  }
 }/*# sourceMappingURL=croissants.css.map */

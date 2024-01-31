@@ -5,7 +5,7 @@
   align-items: center;
   gap: 8px;
 }
-.cafes img {
+.cafes .fundo-cafe {
   width: 100%;
   position: absolute;
   height: 910px;
@@ -104,4 +104,22 @@
 }
 .cafes .cafes-cards .card-tres {
   background: linear-gradient(203deg, rgba(10, 9, 9, 0.95) 4.72%, rgba(84, 21, 17, 0.95) 102.83%);
+}
+
+@media screen and (max-width: 768px) {
+  .cafes .fundo-cafe {
+    display: none;
+  }
+  .cafes .titulo h2 {
+    padding: 0;
+  }
+  .cafes p {
+    width: 100%;
+  }
+  .cafes .cafes-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 }/*# sourceMappingURL=cafes.css.map */
