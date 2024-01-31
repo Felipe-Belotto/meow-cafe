@@ -8,6 +8,7 @@
 @import url(src/scss/delivery.css);
 @import url(src/scss/sobre-nos.css);
 @import url(src/scss/endereco.css);
+@import url(src/scss/footer.css);
 
 body{
   min-width: 100%;

@@ -1,0 +1,49 @@
+footer {
+  padding: 120px 0;
+  width: 1117px;
+}
+footer hr {
+  width: 1117px;
+  height: px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+footer section {
+  padding: 72px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer section div {
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer section div h2 {
+  color: #282828;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 157%; /* 31.4px */
+}
+footer section div p {
+  color: rgba(60, 14, 14, 0.68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 157%; /* 25.12px */
+}
+footer section div ul li a {
+  text-decoration: none;
+  color: rgba(60, 14, 14, 0.68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 157%; /* 25.12px */
+}
+footer section div .contatos {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+footer section div .contatos img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}/*# sourceMappingURL=footer.css.map */
