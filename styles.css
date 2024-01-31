@@ -23,7 +23,6 @@ html{
 body{
   min-width: 100%;
   max-width: 100vw;
-  min-height: 100vh;
   background-color: #f7f2e8;
   color: #3C0E0E;
   font-family: 'Poppins', sans-serif;
@@ -33,12 +32,12 @@ body{
   overflow-x: hidden;
 }
 
-.active{
-  overflow: hidden;
-}
-
 img{
   user-select: none;
+}
+
+.semScroll{
+  overflow-y: hidden;
 }
 
 hr{
