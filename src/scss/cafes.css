@@ -14,14 +14,19 @@
   flex-shrink: 0;
   z-index: -1;
 }
-.cafes h2 {
+.cafes .titulo {
+  display: flex;
+  flex-direction: column;
+}
+.cafes .titulo h2 {
   padding: 72px 0 0 0;
   font-size: 40px;
   font-weight: 600;
-  line-height: 157%; /* 62.8px */
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 8px;
+}
+.cafes .titulo hr {
+  width: 66px;
+  height: 1px;
+  background-color: #3c0e0e;
 }
 .cafes p {
   text-align: center;

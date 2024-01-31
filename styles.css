@@ -4,6 +4,7 @@
 @import url(/reset.css);
 @import url(src/scss/header.css);
 @import url(src/scss/cafes.css);
+@import url(src/scss/croissants.css);
 
 body{
   min-width: 100%;

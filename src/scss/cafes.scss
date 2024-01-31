@@ -14,14 +14,22 @@
     z-index: -1;
   }
 
-  h2{
-    padding: 72px 0 0 0;
-    font-size: 40px;  
-    font-weight: 600;
-    line-height: 157%; /* 62.8px */
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 8px;
+  .titulo {
+
+    display: flex;
+    flex-direction: column;
+
+    h2{
+      padding: 72px 0 0 0;
+      font-size: 40px;  
+      font-weight: 600;
+    }
+  
+    hr{
+      width: 66px;
+      height: 1px;
+      background-color: #3c0e0e;
+    }
   }
 
   p{
