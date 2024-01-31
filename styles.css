@@ -6,6 +6,7 @@
 @import url(src/scss/cafes.css);
 @import url(src/scss/croissants.css);
 @import url(src/scss/delivery.css);
+@import url(src/scss/sobre-nos.css);
 
 body{
   min-width: 100%;

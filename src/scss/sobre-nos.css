@@ -1,0 +1,50 @@
+.sobre-nos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0 0 0;
+}
+.sobre-nos img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.sobre-nos .container {
+  width: 1115px;
+  display: flex;
+  justify-content: space-around;
+}
+.sobre-nos .container div {
+  max-width: 450px;
+}
+.sobre-nos .container div h5 {
+  color: #4D1D1D;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 104.5%; /* 20.9px */
+}
+.sobre-nos .container div p {
+  color: #4D1D1D;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 104.5%; /* 50.16px */
+}
+.sobre-nos .container aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 338px;
+}
+.sobre-nos .container aside h6 {
+  color: #4D1D1D;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 104.5%; /* 16.72px */
+}
+.sobre-nos .container aside p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 157%; /* 25.12px */
+}/*# sourceMappingURL=sobre-nos.css.map */

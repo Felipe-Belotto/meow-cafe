@@ -1,0 +1,58 @@
+.sobre-nos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0 0 0;
+
+  img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .container{
+    width: 1115px;
+    display: flex;
+    justify-content: space-around;
+
+    div{
+      max-width: 450px;
+
+      h5{
+        color: #4D1D1D;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 104.5%; /* 20.9px */
+      }
+      p{
+        color: #4D1D1D;  
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 104.5%; /* 50.16px */
+      }
+    }
+
+    aside{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 338px;
+
+      h6{
+        color: #4D1D1D;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 104.5%; /* 16.72px */
+      }
+
+      p{
+        font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 157%; /* 25.12px */
+      }
+    }
+  }
+
+}
